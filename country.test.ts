@@ -20,6 +20,9 @@ describe('CountryService module', () => {
         expect(countryService.findWithMoreLanguages('fy')).toBe('NL');
     });
 
+    it('should return the country with more languages, including es', () => {
+        expect(countryService.findWithMoreLanguages('es')).toBe('ES');
+    });
 
     it('should return the total languages used', () => {
         expect(countryService.countLanguagesUsed()).toBe(6);
