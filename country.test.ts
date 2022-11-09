@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach } from '@jest/globals';
-import { CountryService } from './country';
+import { CountryService } from './country.service';
 import { data } from './countryData';
 
 describe('CountryService module', () => {
